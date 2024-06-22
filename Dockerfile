@@ -8,4 +8,5 @@ RUN mvn -f pom.xml clean package -DskipTests
 FROM eclipse-temurin:21
 WORKDIR /app
 COPY --from=build /app/target/*.jar glitterfin.jar
+COPY --from=build /app/db db
 ENTRYPOINT ["java","-jar","glitterfin.jar"]
