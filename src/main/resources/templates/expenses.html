@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Expenses</title>
+</head>
+<body>
+<h1>Expenses</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Timestamp</th>
+        <th>Amount</th>
+        <th>Currency</th>
+        <th>Type</th>
+        <th>Category</th>
+        <th>Merchant</th>
+        <th>Card</th>
+        <th>Location</th>
+        <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="expense : ${expenses}">
+        <td th:text="${expense.id}"></td>
+        <td th:text="${expense.timestamp}"></td>
+        <td th:text="${expense.amount}"></td>
+        <td th:text="${expense.currency}"></td>
+        <td th:text="${expense.type}"></td>
+        <td th:text="${expense.category}"></td>
+        <td th:text="${expense.merchant}"></td>
+        <td th:text="${expense.card}"></td>
+        <td th:text="${expense.location}"></td>
+        <td th:text="${expense.comment}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

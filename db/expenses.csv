@@ -1,0 +1,6 @@
+ID,Timestamp,Amount,Currency,Type,Category,Merchant,Card,Location,Comment
+1,2024-06-19T09:30:00,100.00,USD,Purchase,Groceries,Example Grocery Store,1234 5678 9012 3456,New York,"Groceries for the week"
+2,2024-06-18T15:45:00,50.25,USD,Purchase,Entertainment,Example Movie Theater,9876 5432 1098 7654,Los Angeles,"Movie night with friends"
+3,2024-06-17T12:00:00,200.00,USD,Purchase,Electronics,Example Electronics Store,5678 9012 3456 7890,San Francisco,"New laptop for work"
+4,2024-06-16T11:00:00,75.50,USD,Purchase,Books,Example Bookstore,3456 7890 1234 5678,Chicago,"Summer reading list"
+5,2024-06-15T08:00:00,120.75,USD,Purchase,Clothing,Example Clothing Store,9012 3456 7890 1234,Miami,"New summer wardrobe"
