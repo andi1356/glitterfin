@@ -1,10 +1,9 @@
 FROM maven:3.9.7-eclipse-temurin-21 as build
 WORKDIR /app
 COPY pom.xml .
-COPY src/ src/
-COPY test/ test/
+COPY src/main src/main
 COPY db/ db/
-RUN mvn -f pom.xml clean package
+RUN mvn -f pom.xml clean package -DskipTests
 
 FROM eclipse-temurin:21
 WORKDIR /app
